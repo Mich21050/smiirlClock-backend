@@ -1,0 +1,5 @@
+__pycache__
+*.pcapng
+state.json
+.git
+.gitignore

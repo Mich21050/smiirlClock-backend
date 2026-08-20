@@ -1,0 +1,12 @@
+services:
+  smiirl:
+    build: .
+    container_name: smiirl
+    ports:
+      - "80:80"
+    volumes:
+      - smiirl-state:/data
+    restart: unless-stopped
+
+volumes:
+  smiirl-state:
