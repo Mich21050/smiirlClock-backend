@@ -2,6 +2,8 @@ services:
   smiirl:
     build: .
     container_name: smiirl
+    environment:
+      - TZ=Europe/Vienna
     ports:
       - "80:80"
     volumes:
